@@ -1,6 +1,7 @@
  <?php
     
     require_once ('Voiture.php');
+
 ?>
 <!DOCTYPE html>
 <html lang="en">
@@ -11,7 +12,14 @@
     <title>Véhicules</title>
 </head>
 <body>
-  
-   <?php $dacia2 = new Voiture("Vert", 12); ?>
+    <?php 
+        
+        $dacia = new Voiture("Vert",52); 
+        $dacia->demarrerMoteur();
+        $dacia->passerVitesse(3);
+        $dacia->ralentir(3);
+        $dacia->eteindreMoteur();
+        
+   ?>
 </body>
 </html>
